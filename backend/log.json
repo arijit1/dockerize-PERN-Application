@@ -1,0 +1,14 @@
+{
+    "name": "blogitout",
+    "hostname": "DESKTOP-KPLPM6G",
+    "pid": 3560,
+    "level": 30,
+    "msg": " GET :: posted : 2798,9657 Type: food",
+    "time": "2020-08-20T14:30:37.622Z",
+    "src": {
+        "file": "F:\\react_workspace\\react_node_postgresql\\blogapp\\blogitout\\backend\\log.js",
+        "line": 15,
+        "func": "logging"
+    },
+    "v": 0
+}

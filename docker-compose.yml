@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  frontend:
+    stdin_open: true
+    container_name: "frontend"
+    build: ./
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/usr/src/fe/app
+    depends_on: 
+      - backend  
+    
+
+  backend:
+    build: ./backend
+    container_name: "backend"
+    ports:
+    - "5001:5001"
+    volumes:
+    - ./backend/:/usr/src/be/app
+    depends_on: 
+      - db
+    # command: ["./wait-for-it.sh", "db:5432", "--", "node", "index.js"]
+    
+  db:
+    image: postgres
+    container_name: "postgres"
+    environment:
+          POSTGRES_PASSWORD: 1234
+          POSTGRES_USER: postgres
+          POSTGRES_DB: blogitout
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - pgconf:/etc/postgresql
+      - pglog:/var/log/postgresql
+    ports:
+      - "5432:5432"
+    
+volumes:
+    pgdata:
+      driver: local
+    pgconf:
+      driver: local
+    pglog: 
+      driver: local  

@@ -1,0 +1,71 @@
+.postDisp {
+    border: 10px double rgb(252, 252, 252);
+    margin: 50px;
+    margin-top: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: black;
+}
+
+.postDisp:hover {
+    border: 7px solid black;
+    cursor: pointer;
+}
+.title:hover{
+    border : 5px double white;
+    background-color: rgb(241, 148, 16)
+}
+.title {
+    font-weight: bold;
+    border: 3px solid rgb(39, 17, 17);
+    margin-top: 200px;
+    margin-bottom: 10px;
+    background-color: rgb(245, 237, 226);
+    text-align: center;
+}
+
+.head-title {
+    text-decoration: underline;
+    font-family: fantasy;
+    font-size: 70px;
+}
+
+.type-blog {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.btn-primary {
+    margin: 5px;
+}
+
+.displaySelectedPost {
+    font-family: cursive
+}
+
+.postViewTitle {
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 2px solid rgb(11, 12, 11);
+    font-weight: bold;
+    background-color: rgb(250, 251, 252);
+}
+
+.postViewBody {
+    text-align: justify;
+    margin: 50px;
+    padding: 20px;
+    background-color: rgba(241, 238, 238, 0.753);
+    color: rgb(10, 9, 9);
+    border: 2px solid black;
+}
+.blogNavBar>.blogNavBar_blog{
+    color: red;
+    font-size: large;
+    font-weight: bolder;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px;
+}
